@@ -5,6 +5,7 @@ console.log(text);
 console.log(text.length);
 
 
+
 let char="abcdefghijklmnopqrstuvwxyz";
 
 console.log(char.length);
@@ -54,8 +55,8 @@ console.log(firstName.concat(last_Name));
 
 
 
-console.log(firstName.charAt(20));//beyond length it will return empty string
-console.log(firstName[20]); //beyond length it will return undefined
+console.log(firstName.charAt(20));
+console.log(firstName[20]); 
 console.log(firstName.charAt(40));//beyond length it will return empty string
 console.log(firstName[40]); //beyond length it will return undefined
 

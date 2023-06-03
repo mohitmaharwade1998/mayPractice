@@ -21,7 +21,7 @@ arr.forEach(ele => {
  function abc(){
     let res=12+15;
     return res;
-    return "mmm" //unreachable code block after return 
+    //return "mmm" //unreachable code block after return 
  }
  console.log(abc());
 //    abc()
@@ -69,7 +69,7 @@ var emp = [
  console.log(empdata);
 
  let empData1= emp.filter(ele =>{
-    return ele.age >=50 && ele.sal == 30000
+    return ele.age >=50 && ele.sal == 30000;
  })
  console.log(empData1);
 
@@ -100,7 +100,7 @@ var emp = [
  let empname= emp.map(item=>{
     return item.name;
  })
- console.log(empname);
+ console.log(empname);  //['Rohan', 'Rohit', 'Roy', 'Rihan']
 
  let empSal=emp.map(ele=>{
     return ele.sal
@@ -121,9 +121,10 @@ var emp = [
 //remove duplicate items 
  let chars = ['A','P', 'B','C','T','A','B','D','C'];
 var newCars =  chars.filter((item, index) =>{
-  return  chars.lastIndexOf(item) === index
+  return  chars.indexOf(item) === index;
+  
 } )
-console.log("chars---",newCars); //op ['P', 'T', 'A', 'B', 'D', 'C']
+console.log("chars---",newCars); //op ['A', 'P', 'B', 'C', 'T', 'D']
 
 let char1=['a','b','d','a','r','c','r',1,5,8,1,8];
 let dupCahr= char1.filter((item,index) =>{

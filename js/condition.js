@@ -56,4 +56,14 @@ switch(num){
     break;
     case 58:console.log("www");
     default:console.log('default');
+};
+
+let num2=88;
+switch (num2) {
+    case 78:console.log('7888');
+    break;
+    case 88:console.log("88"); 
+    break;
+    default:console.log('default');
+        break;
 }

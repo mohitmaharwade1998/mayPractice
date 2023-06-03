@@ -50,6 +50,8 @@ function myFunction(){
 myFunction() ;
 console.log(myFunction());
 
+
+
 function scope(){
     var myFavMovie="pk";
     console.log(myFavMovie);
@@ -61,6 +63,7 @@ function scope(){
         var v='maharwade';
         console.log(u);
         console.log(v);
+        console.log(myFavMovie1);
 
     }
     // console.log(u);  this are block level
@@ -70,4 +73,4 @@ function scope(){
 
 }
 
-// scope() ;
+//  scope() ;

@@ -22,6 +22,7 @@
 
 
 <br><br>
+
 <script>
 document.write('aaaa'); //it will show op on UI.
 </script>
@@ -35,4 +36,40 @@ document.write('aaaa'); //it will show op on UI.
         document.write('inside function')
     }
     document.write(test())
+</script>
+
+
+<p id="mango">i like mango</p>;
+<button onclick="document.getElementById('mango').innerHTML='i like apple'">click</button>
+
+<p id="mohit">mohit</p>
+<button onclick="mohit()">click mohit</button>
+<script>
+   function mohit(){
+    let ele=document.getElementById('mohit');
+    ele.style.color='green'
+   }
+</script>
+
+
+<p>the count is :</p>
+<p id="count">...</p>
+<script>
+let text="dfghjklkjhgfdfghjkl";
+document.getElementById('count').innerHTML=text.length
+
+</script>
+
+<!-- or -->
+
+<p>the count is :</p>
+<p id="count11">...</p>
+<button onclick="count1()">click </button>
+<script>
+   function count1(){
+    let aa="ghjklghj";
+    document.getElementById('count11').innerHTML=aa.length;
+   }
+
+   document.write("mmmmmmmmmmmmmmm")
 </script>

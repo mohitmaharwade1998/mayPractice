@@ -29,20 +29,20 @@ console.log(a);// it will return pop value;
 
  //push
 let bb = arrayItem.push(425);
-// console.log(bb);
+console.log(bb);//show length
 console.log(arrayItem);
 
 //shift
 let s=arrayItem.shift()
-// console.log(s);
+console.log(s);  //show shift value=10
 console.log(arrayItem);
 
 //unshift
-let r=arrayItem.unshift(200,875);
+arrayItem.unshift(200,875);
 console.log(arrayItem);
 
-// arrayItem[3] = 500;
-// console.log( '---->',arrayItem);
+arrayItem[3] = 500;
+console.log( '---->',arrayItem);
 
 
 //splice
@@ -59,6 +59,10 @@ let arr7=[10,20,30,40,50,60,70,80,90,100];
 arr7.splice(0,2) // [30, 40, 50, 60, 70, 80, 90, 100]
 console.log(arr7);
 
+let arr8=[10,20,30,40,50,60,70,80,90,100];
+arr8.splice(2,1,22,44)
+console.log(arr8); //[10, 20, 22, 44, 40, 50, 60, 70, 80, 90, 100]
+
 let num1 = [10,101,23,222];
 let num2 = [105,1061,623,2622];
 
@@ -67,7 +71,7 @@ console.log(num3);
 
 console.log(num2.slice(2)); //623,2622]
 
-console.log(num1.reverse());
+console.log(num1.reverse()); // [222, 23, 101, 10]
 
 let x = ['Abc','c','aBc','b','B']
 console.log(x.sort()); //['Abc', 'B', 'aBc', 'b', 'c'] it will not work properly in string;

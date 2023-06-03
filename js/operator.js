@@ -3,10 +3,10 @@
 
 var x = 50;
 let y = 10;
-x -= y // ans 40
-//y+=x
-console.log(x);
-//console.log(y);
+// x -= y // ans 40
+y+=x
+//console.log(x);
+console.log(y);
 
 
 //postfix, prefix operator
@@ -60,6 +60,19 @@ if (num1 > 10 || num2 < 50) {
 }
 if(num1==20 && num2==undefined){
     console.log("||||||||||||||||"); //no output
+}
+
+if(num1!=20){
+    console.log("mmmm");
+}else{
+    console.log('kkk');
+}
+
+
+if(num1!==20){
+    console.log("mmmm");
+}else{
+    console.log('kkk');
 }
 
 

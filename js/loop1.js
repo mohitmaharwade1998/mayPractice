@@ -5,7 +5,7 @@ let cars = ['i10','i20','swift','jaguar','audi'];
 let carsNew=[];
 for( let item of cars){
     carsNew.push(item);
-    console.log(carsNew);
+    //console.log(carsNew);
 }
 console.log(carsNew);
 // console.log(item);
@@ -20,18 +20,18 @@ let student = {
 console.log(student);
 
 for(var item1 in student){
-     console.log(item1);
+     console.log(item1); // 1-1 key print
 }
 
 
 
 for(var item1 in student){
     }
-console.log(item1); //op
+console.log(item1); //op car
 
 
 for(let a in student){
-    console.log(student[a]);
+    console.log(student[a]); //op 1-1 item print
  }
  
 
@@ -41,9 +41,11 @@ for(let a in student){
       var car =  student[i]
      console.log(car);
     }
-    
+    console.log(car);
     }
-    
+    console.log(car);
+
+
 
     for(let j in student){
         if(j=='name'){
@@ -54,16 +56,22 @@ for(let a in student){
 
     
 
-    //while loop
+//while loop
 
 let no = 20;
 
-while (no >= 10) {
+while (no <= 25) {
     console.log(no); //starting with 20
-    no--; // if we are not giving inc or dcr then compiler will go in infinite loop
+    no++; // if we are not giving inc or dcr then compiler will go in infinite loop
     // console.log(no); //starting with 19
 }
 
+let no1 = 30;
+while (no1 > 25) {
+    console.log(no1); //starting with 20
+    no1--; // if we are not giving inc or dcr then compiler will go in infinite loop
+     //console.log(no1); //starting with 19
+}
 
 // do while loop
 
