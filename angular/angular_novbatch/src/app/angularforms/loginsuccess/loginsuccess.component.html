@@ -1,4 +1,51 @@
-<p>loginsuccess works!</p>
+<p>loginsuccess works!rrrr</p>
 
 
 welcom <h2> {{name}} </h2>
+<br>
+
+<div>
+    <ul *ngFor=" let hotelData of  hotelDetails">
+        <li>{{hotelData.hotelName}}</li>
+        <li>{{hotelData.city}}</li>
+        <li>{{hotelData.hotelMobNo}}</li>
+        <li>{{hotelData.roomAvailable}}</li>
+        <li>{{hotelData.hotelMenu}}</li>
+        <li>{{hotelData.checkinTime}}</li>
+        <li>{{hotelData.checkOutTime}}</li>
+        <li>{{hotelData.id}}</li>
+    </ul>
+
+
+</div>
+
+<br>
+
+<form [formGroup]="matForm">
+
+    <mat-form-field>
+
+        <mat-label>Name :</mat-label>
+        <input matInput type="text" formControlName="name">
+        <mat-icon matSuffix>mode_edit</mat-icon>
+        <mat-hint>Please enter name</mat-hint>
+        <mat-error *ngIf="matForm.get('name')?.touched ">name is required</mat-error>
+    </mat-form-field> <br> <br>
+
+    <mat-form-field>
+
+        <mat-label>password :</mat-label>
+        <input matInput type="text" formControlName="password">
+        <mat-icon matSuffix (click)="visibility()">visibility</mat-icon>
+        <mat-hint>Please enter password</mat-hint>
+        <mat-error *ngIf="matForm.get('password')?.touched ">password is required</mat-error>
+    </mat-form-field> <br> <br>
+    <button mat-raised-button color="primary">submit</button>
+</form>
+
+<br><br>
+<!-- <p>
+	<ngb-alert [dismissible]="false">
+		<strong>Warning!</strong> Better check yourself, you're not looking too good.
+	</ngb-alert>
+</p> -->

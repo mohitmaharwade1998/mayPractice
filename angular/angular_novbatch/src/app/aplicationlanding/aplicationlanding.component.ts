@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { CommonApiCallService } from '../angularforms/common-api-call.service';
 
 @Component({
   selector: 'app-aplicationlanding',
@@ -7,16 +8,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./aplicationlanding.component.scss']
 })
 export class AplicationlandingComponent {
+  constructor(private commonApiCall:CommonApiCallService){
 
+  }
 
-  constructor(private router:Router){}
-  redirect(){
-    this.router.navigateByUrl('/admin/admin')
-    }
-  
-    testcontact(){
-      this.router.navigateByUrl('/test/testContact')
-    }
-  
+  deleteById(){
+    this.commonApiCall.deleteApiCall('user',10).subscribe(res=>{})
+
+  }
   
 }

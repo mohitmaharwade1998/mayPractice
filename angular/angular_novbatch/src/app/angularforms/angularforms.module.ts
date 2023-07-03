@@ -5,9 +5,11 @@ import { AngularformsRoutingModule } from './angularforms-routing.module';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { TemplatedrivenComponent } from './templatedriven/templatedriven.component';
 import { SharedModule } from '../shared/shared.module';
-import { NumberonyDirective } from './numberony.directive';
+
 import { AlphanumericDirective } from './alphanumeric.directive';
 import { LoginsuccessComponent } from './loginsuccess/loginsuccess.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { LoginsuccessComponent } from './loginsuccess/loginsuccess.component';
     CommonModule,
     AngularformsRoutingModule,
     SharedModule,
+    HttpClientModule
+    
   ]
 })
 export class AngularformsModule { }

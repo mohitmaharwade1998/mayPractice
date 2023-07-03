@@ -7,6 +7,21 @@
       "password": "Poonam@123",
       "confirmPassword": "Poonam@123",
       "id": 1
+    },
+    {
+      "mobNo": "",
+      "name": "",
+      "password": "",
+      "confirmpassword": "bbbb",
+      "id": 2
+    },
+    {
+      "name": "rahul",
+      "city": "mumbai",
+      "mobNo": 578551,
+      "password": "Rahul@123",
+      "confirmPassword": "Rahul@123",
+      "id": 3
     }
   ],
   "user": [
@@ -21,10 +36,98 @@
     {
       "name": "rohit",
       "city": "mumbai",
-      "mobNo": 8656551,
-      "password": "Poonam@123",
-      "confirmPassword": "Poonam@123",
-      "id": 1
+      "mobNo": 21356551,
+      "password": "Rohit@123",
+      "confirmPassword": "Rohit@123",
+      "id": 2
+    },
+    {
+      "name": "harshi",
+      "mobNo": "8999273274",
+      "tAndc": true,
+      "lastname": "shivankar",
+      "title": "aaa",
+      "city": "Mumbai",
+      "password": "harshi@123",
+      "confirmpassword": "harshi@123",
+      "id": 3
+    },
+    {
+      "name": "aaaaa",
+      "mobNo": "11111",
+      "tAndc": true,
+      "lastname": "aaaaa",
+      "title": "aaaa",
+      "city": "Mumbai",
+      "password": "aaaaaa",
+      "confirmpassword": "aaaaaa",
+      "id": 4
+    },
+    {
+      "name": "sssss",
+      "mobNo": "222222",
+      "tAndc": true,
+      "lastname": "ssssss",
+      "title": "aaa",
+      "city": "Nagpur",
+      "password": "sss@123",
+      "confirmpassword": "sss@123",
+      "id": 5
+    },
+    {
+      "name": "aaaaa",
+      "mobNo": "111111111",
+      "tAndc": true,
+      "lastname": "aaaa",
+      "title": "aaaa",
+      "city": "Mumbai",
+      "password": "aaa",
+      "confirmpassword": "aaa",
+      "id": 6
+    },
+    {
+      "name": "zzzzz",
+      "mobNo": "00000",
+      "tAndc": true,
+      "lastname": "zzzzz",
+      "title": "zzzz",
+      "city": "Pune",
+      "password": "zzz",
+      "confirmpassword": "zzz",
+      "id": 7
+    },
+    {
+      "name": "wwwww",
+      "mobileNo": "121212",
+      "tAndc": true,
+      "lastname": "wwwww",
+      "title": "wwww",
+      "city": "Mumbai",
+      "password": "wwww",
+      "confirmpassword": "wwww",
+      "id": 8
+    },
+    {
+      "name": "eeeee",
+      "mobileNo": "1234567890",
+      "tAndc": true,
+      "lastname": "eeeee",
+      "title": "eee",
+      "city": "Satara",
+      "password": "eee",
+      "confirmpassword": "eee",
+      "id": 9
+    },
+    {
+      "name": "rrrrr",
+      "mobileNo": "000",
+      "tAndc": true,
+      "lastname": "rrrrr",
+      "title": "rrrr",
+      "city": "Nagpur",
+      "password": "rrrr",
+      "confirmpassword": "rrrr",
+      "id": 10
     }
   ],
   "owner": [
@@ -42,7 +145,7 @@
       "mobNo": 12541,
       "password": "Mohit@123",
       "confirmPassword": "Mohit@123",
-      "id": 1
+      "id": 2
     }
   ],
   "hotelDetails": [
@@ -54,8 +157,8 @@
       "hotelMenu": "panir tikka",
       "checkinTime": "12 pm",
       "checkOutTime": "11am",
-      "T&C":true,
-      "prise":2000,
+      "T&C": true,
+      "prise": 2000,
       "id": 1
     },
     {

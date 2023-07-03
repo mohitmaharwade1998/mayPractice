@@ -1,0 +1,87 @@
+p{
+    color: red;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.aa{
+    color: blue;
+}
+
+.container1{
+    background-image: url('background.avif');
+    background-repeat: no-repeat;
+    /* height: 100%;
+    width: 100%; */
+}
+#span{
+    background-color: aqua;
+    border: 2px solid red;
+}
+.div{
+    background-color: blueviolet;
+    border: 2px dashed green;
+}
+
+.mohit{
+    border: 2px solid blue;
+    background-color: aqua;
+    text-align: center;
+}
+
+#bb{
+    border: 1px solid black;
+    height: 80px;
+    width: 100px;
+    overflow: hidden;
+    text-overflow: clip;
+ /* text-overflow: ellipsis; */
+     /* text-overflow: inherit; */
+}
+
+div#bb:hover{
+    overflow: visible;
+}
+
+#cc{
+
+    border: 2px solid red;
+    height: 80px;
+    width: 150px;
+
+    /* overflow: auto; */
+
+    /* overflow-y: auto; */
+
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+
+      /* overflow-x: auto;
+    overflow-y: auto; */
+
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+
+    /* overflow-y: hidden;
+    overflow-x: scroll; */
+}
+
+.dd{
+    border: 1px solid black;
+    /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; */
+    /* text-shadow: 5px 10px 5px red; */
+    text-shadow: -5px -10px 5px red ;
+    font-size: 50px;
+    background-color: aqua;
+    color: red;
+}
+
+.opacity{
+    opacity: 0.5;
+}
+
+div.opacity:hover{
+    opacity: 1;
+}

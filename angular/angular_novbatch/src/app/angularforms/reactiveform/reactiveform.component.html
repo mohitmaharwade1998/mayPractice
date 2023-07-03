@@ -1,7 +1,22 @@
 <p>reactiveform works!</p>
+<br>
+<input type="text" (keyup)="data($event)"> <br> <br>
+
+<input type="text" #inputbox (keydown)="data1(inputbox.value)"> <br><br>
+
+<input type="text" [(ngModel)]="data3" (keydown)="data4()" >
+{{data3}}
+
+
+
+<br><br>
+<button mat-raised-button color="accent">Accent</button>
+<br><br>
 
 
 <form [formGroup]="studentDataForm">
+
+    <button (click)="putApi()">putApi</button> <br>
 
     <label>Name :<span class="error" *ngIf="studentDataForm.get('name')?.touched &&
         studentDataForm.get('name')?.errors?.['required']">*</span> </label> <br>
@@ -77,6 +92,7 @@
     <label > Confirm Password : </label><br>
     <input [type]=" showConfirmPassword ? 'text' : 'password'" formControlName="confirmpassword"
     (keyup)="confimPasswordValidation($event)">
+    <mat-icon matSuffix>visibility</mat-icon>
     <span (click)="showConfirmPasswordFun()"> <button>show</button></span>
     <br>
     <span class="error" *ngIf="isMatched">password is not matched</span>

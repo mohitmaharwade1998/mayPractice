@@ -25,6 +25,9 @@ import { LifecyclehookComponent } from './lifecyclehook/lifecyclehook.component'
 import { LifecycleParentComponent } from './lifecycle-parent/lifecycle-parent.component';
 import { SubjectsComponent } from './subjects/subjects.component';
 import { SubjectsOneComponent } from './subjects-one/subjects-one.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import {  HttpClientModule } from '@angular/common/http';
 
 
 
@@ -59,7 +62,10 @@ import { SubjectsOneComponent } from './subjects-one/subjects-one.component';
     FormsModule,
     //HomeModule,
     // ContactusModule,
-    SharedModule
+    SharedModule,
+    BrowserAnimationsModule,
+  
+// HttpClientModule
  
   ],
   providers: [],
