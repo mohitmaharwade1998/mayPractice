@@ -1,0 +1,125 @@
+<p>directive works!</p>
+<!-- directives can be classified in 3 categories based on how they behave:
+
+Component Directives : main class
+Structural Directives *ngIf, *ngFor, *ngSwitch
+Attribute Directives
+
+Component Directives: Component directives are used in main class. They contain the detail of how the 
+component should be processed, instantiated and used at runtime.
+
+Structural Directives: Structural directives start with a * sign.
+ These directives are used to manipulate and change the structure of the DOM elements.
+ For example, *ngIf directive, *ngSwitch directive, and *ngFor directive. 
+*ngIf Directive: The ngIf allows us to Add/Remove DOM Element.
+*ngSwitch Directive: The *ngSwitch allows us to Add/Remove DOM Element. It is similar to switch statement of js.
+*ngFor Directive: The *ngFor directive is used to repeat a portion
+ of HTML template once per each item from an iterable list (Collection).-->
+
+
+<p *ngIf="para">paragraph.....</p>
+<p *ngIf="para1">mohit</p> <br><br>
+
+
+<div class="main" *ngIf="show">
+    divvv...
+    <p></p>
+    <h1>h1111</h1>
+
+</div>
+
+<br>
+
+
+<button (click)="hideDiv()">hide</button>
+<button (click)="showDiv()">show</button>
+
+<button (click)="hidShowDiv(false)">hide</button>
+<button (click)="hidShowDiv(true)">show</button>
+
+<button (click)="toggle1()">toggle</button><br>
+
+{{item}}
+<br> <br>
+
+
+<div *ngFor=" let items of item">
+    <p>{{items}}</p>
+</div>
+
+
+<div *ngIf="showStudentdata">
+    <ul *ngFor="let studentdata of student">
+        <li>{{studentdata.name}}</li>
+        <li>{{studentdata.age}}</li>
+        <li>{{studentdata.hobby}}</li>
+    </ul>
+</div>
+
+<br>
+
+<!-- <img [src]="img" height="200px" width="200px"> -->
+<!-- <img src="C:/Users/user/Desktop/new practice 31-5-23/mayChanakya/mayPractice/angular/
+    angular_novbatch/src/assets/mopic.jpeg.png" 
+    alt="mm" height="200px" width="200px"> -->
+
+<div [ngSwitch]="color">
+    <h3 *ngSwitchCase="'green'">Green</h3>
+    <h3 *ngSwitchCase="'yellow'">Yellow</h3>
+    <h3 *ngSwitchCase="'pink'">Pink</h3>
+    <h3 *ngSwitchCase="'blue'">Blue</h3>
+    <h3 *ngSwitchDefault>default</h3>
+</div>
+
+<button (click)="switchcolor('blue')">blue</button>
+<button (click)="switchcolor('green')">green</button>
+
+<!-- Attribute Directives: Attribute directives are used to change the look and behavior 
+of the DOM elements.
+For example: ngClass directive, and ngStyle directive etc.
+ngClass Directive: The ngClass directive is used to add or remove CSS classes to 
+an HTML element.
+ngStyle Directive: The ngStyle directive facilitates you to modify the style of 
+an HTML element using the expression. You can also use ngStyle directive to 
+dynamically change the style of your HTML element. -->
+
+<!-- simple way -->
+<div class="main main2">mmmm</div> <br>
+
+<div [ngClass]="styleProperty  ?  styleProperty : 'main'">
+
+</div>
+<br>
+<br>
+
+<div [ngClass]="stylePropertyNew  ?  'main2' : 'main'">
+
+</div>
+<br>
+
+<div [class.main]="multipleStyle=='poonam'" 
+     [class.main2]="multipleStyle=='patil'"
+     [class.main3]="multipleStyle=='mohit'"> property
+
+</div>
+<br><br>
+
+
+<div [ngClass]="setclass()">
+    by function
+</div>
+
+<br>
+
+
+<p [ngStyle]="{'background-color':inlinecss == 'orange' ? inlinecss : 'blue' }">paragraph</p>
+
+<br>
+
+
+<div>
+    <h1 [class.main]="headingproperty" [class.main2]="!headingproperty">
+        heading 1
+    </h1>
+    <h2>heading 2</h2>
+</div>

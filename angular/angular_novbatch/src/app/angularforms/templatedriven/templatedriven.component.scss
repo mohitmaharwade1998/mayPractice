@@ -1,0 +1,22 @@
+.error{
+    color: red;
+}
+
+
+
+input.ng-invalid.ng-touched
+{
+    border: 1px solid red;
+    // outline: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.form-container{
+    margin: auto;
+    text-align: center;
+    border: 1 px solid red;
+    background-color: aqua;
+    height: 280px;
+    width: 300px;
+}

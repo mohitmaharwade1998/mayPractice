@@ -1,0 +1,30 @@
+<p>user works!</p>
+
+<h2>header</h2>
+
+<input type="text" #inputBox > :Enter name here...
+<button (click)="myFunction(inputBox.value)">click fun.</button>
+{{inputBoxValue}}
+<br>
+
+<input type="text" #inputBox1 (keyup)="myFunction1(inputBox1.value)"> :Enter name here...
+{{inputBoxValue1}}
+<br> <br>
+
+<input type="text" #inputBox2 (keyup)="myFunction2(inputBox2)" (click)="blurEvent()" > :Enter name here...
+{{inputBoxValue2}}
+<br> <br>
+
+<input type="text"  (keyup)="myFunction3($event.target)"  > :Enter name here.,..
+{{inputBoxValue3}}
+<br> <br>
+
+<div (mouseover)="myEvent()" style="color: blueviolet;" >
+    hey gtgjjj ghb ...
+</div>
+<br>
+
+<input type="checkbox" (change)="checkboxEvent()"> item1  <br>
+
+<input type="checkbox" value="item2" (change)="checkboxEvent1($event)"> item2   <br>
+<input type="checkbox" value="item3" (change)="checkboxEvent2($event.target)"> item3   <br>

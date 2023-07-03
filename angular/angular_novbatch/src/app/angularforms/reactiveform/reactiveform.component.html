@@ -1,0 +1,101 @@
+<p>reactiveform works!</p>
+
+
+<form [formGroup]="studentDataForm">
+
+    <label>Name :<span class="error" *ngIf="studentDataForm.get('name')?.touched &&
+        studentDataForm.get('name')?.errors?.['required']">*</span> </label> <br>
+
+    <input type="text" formControlName="name"> <br>
+
+    <span class="error" *ngIf="studentDataForm.get('name')?.touched &&
+     studentDataForm.get('name')?.errors?.['required']">Name is required</span>
+
+     <span class="error" *ngIf="studentDataForm.get('name')?.touched &&
+     studentDataForm.get('name')?.errors?.['minlength']">Enter atleast 5 Charactor
+    </span>
+    <br>
+
+
+    <label>LastName :<span class="error" *ngIf="studentDataForm.get('lastname')?.touched &&
+        studentDataForm.get('lastname')?.errors?.['required']">*</span> </label> <br>
+
+    <input type="text" formControlName="lastname"> <br>
+
+    <span class="error" *ngIf="studentDataForm.get('lastname')?.touched &&
+    studentDataForm.get('lastname')?.errors?.['required']">LastName is required</span>
+
+    <span class="error" *ngIf="(studentDataForm.get('lastname')?.touched || studentDataForm.get('lastname')?.dirty) 
+    && studentDataForm.get('lastname')?.errors?.['pattern']">
+        pattern not matched</span>
+
+    <span></span>
+
+    <br>
+    <label>Mobile No :</label> <br>
+
+    <input type="text" formControlName="mobileNo"> <br>
+    
+    <span class="error" *ngIf="studentDataForm.get('mobileNo')
+    ?.errors?.['pattern'] && !studentDataForm.get('mobileNo')
+    ?.errors?.['maxlength']">Pattern not matched</span>
+
+    <span class="error" *ngIf="studentDataForm.get('mobileNo')
+    ?.errors?.['maxlength'] && !studentDataForm.get('mobileNo')?.errors?.
+    ['pattern']">maximum 10 digit</span>
+    <br>
+     
+
+    <label>City : </label>
+    <select formControlName="city">
+        <!-- <option value="mumbai" hidden selected>Mumbai</option> -->
+        <!-- <option value="mumbai">Mumbai</option>
+        <option value="pune">Pune</option>
+        <option value="nagpur">Nagpur</option>
+        <option value="satara">Satara</option> -->
+
+        <option *ngFor="let city of cities" [value]="city">
+            {{city}}
+        </option>
+    </select>
+      
+    <br>
+     <br>
+
+    <label >Password : </label><br>
+
+    <input [type]="showPassword ? 'text' : 'password'" formControlName="password"
+    (keyup)="passwordValidation($event)">
+    <span (click)="showPasswordFun()"> <button><sub>show</sub></button></span>
+    <br>
+
+    <span class="error" *ngIf="isMatched">password is not matched</span>
+    <br><br>
+
+   
+
+    <label > Confirm Password : </label><br>
+    <input [type]=" showConfirmPassword ? 'text' : 'password'" formControlName="confirmpassword"
+    (keyup)="confimPasswordValidation($event)">
+    <span (click)="showConfirmPasswordFun()"> <button>show</button></span>
+    <br>
+    <span class="error" *ngIf="isMatched">password is not matched</span>
+  <br>
+
+
+
+  
+    <label>Title word is not accepted : </label> <br>
+    <input type="text" formControlName="title"> <br>
+    <span class="error" *ngIf="studentDataForm.get('title')?.touched && 
+    studentDataForm.get('title')?.errors?.['isValid'] ">
+        title word is not accepting</span>
+
+    <br><br>
+     <input type="checkbox" formControlName="tAndc">Plase aceepct t&C...
+
+    <br>
+    <br>
+    <button [disabled]="studentDataForm.invalid" (click)="submit()">Submit</button>
+  
+</form>

@@ -1,0 +1,38 @@
+<p>databinding works!</p>
+
+<!-- one way databing, two way databinding --> 
+<!-- one way bd=> 1 -string interpolation {{}} ,2- property binding ., 3-event binding
+two way db=> tow way db  -->
+
+{{data}}  <br>
+{{getvalue()}} <br>
+{{10+30}} <br>
+{{30-20}} <br>
+{{no == 50}} <br>
+{{no == 40}} <br>
+<!-- {{n = 100}} -->  <br>
+<!-- {{typeOf(no)}} -->
+<!-- {{no++}} -->
+<!-- {{no--}} -->
+
+<br>
+{{emp.name}} <br>
+
+
+<input type="text" value="mohit">1 <br>
+<input type="text" [value]="name"> 2<br>
+<input type="text" [value]="'name'"> 3<br>
+<input type="text" value="{{name}}">  4<br>
+<input type="text" disabled> 5<br>
+<input type="text" [disabled]="disableBox">6<br>
+<input type="text" disabled={{disableBox}}>7 <br>
+
+<!-- two way -->
+<br><br>
+<input type="text" [(ngModel)]="name2">
+{{name2}} <br>
+
+{{ng()}}
+<br>
+
+copy of array:{{arraytemCopy}}

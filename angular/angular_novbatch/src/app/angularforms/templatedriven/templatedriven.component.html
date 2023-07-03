@@ -1,0 +1,80 @@
+<!-- <p>templatedriven works!</p>
+
+
+<input type="text" appCharactorsonly> <br> <br>
+<input type="text" appNumberony> <br><br>
+
+{{500 | curruncyrupee }} -->
+
+
+<!-- <p>Templatedriven Form</p> <br>
+<form #loginform="ngForm"  autocomplete="off">
+
+<h3>Login Form</h3>
+
+<<label for="">Name : </label> <br>  
+<input type="text" ngModel  name="fullname" #fullname="ngModel"
+ placeholder="Enter Name.." required minlength="5" pattern="[^a-zA-Z]*"><br>
+ <span *ngIf="!fullname.touched">Enter Your Full Name:</span>  -->
+<!-- <span>Enter Your Full Name:</span> <br>
+<span class="error" *ngIf="fullname.touched && fullname.errors?.['required'] && fullname.invalid" >Name is required..</span> 
+<span class="error" *ngIf="fullname.errors?.['minlength']">Enter Atleat 5 Charactor</span> 
+<span class="error" *ngIf="!fullname.valid && !fullname.errors?.['minlength'] && fullname.errors?.['pattern']">Name is Invalid</span>
+
+<br><br> 
+ <label >Password :</label> <br> 
+<input type="text" ngModel name="password"> <br>
+<span>Enter Password :</span>
+
+<br><br>
+<button (click)="submit(loginform.value)">submit</button>
+</form> -->
+
+
+
+
+<p>template driven form</p>
+
+<form class="form-container" #loginForm="ngForm" autocomplete="off">
+
+    <h3>Login Form</h3>
+
+    <!-- <label>    Enter Your Name :</label> <br> -->
+    <input type="text" ngModel name="fullname" #fullname="ngModel" required minlength="5" placeholder="Enter a name"
+        pattern="[a-zA-Z]*"> <br>
+    <!-- <span *ngIf="!fullname.touched">Hint:Enter Your Full Name</span>  -->
+    <span>Hint:Enter Your Full Name</span> <br>
+
+
+    <span class="error" *ngIf="fullname.touched && fullname.errors?.['required'] && 
+    fullname.invalid">Name Is Required..</span>
+    
+    <span class="error" *ngIf="fullname.errors?.['minlength']">Enter Atleast 5 Charactor</span>
+
+
+    <!-- <span class="error" *ngIf="fullname.touched && fullname.invalid && fullname.errors?.['pattern']
+     && !fullname.errors?.['minlength']">Name Is Invalid</span> <br> -->
+
+    <span class="error" *ngIf="fullname.invalid && fullname.errors?.['pattern'] && !fullname.errors?.['minlength']">Name
+        is Invalid please Enter proper Name</span><br>
+
+
+    <br>
+
+
+
+    <!-- <label>Enter a Password :</label> <br> -->
+    <input type="text" ngModel name="password"> <br>
+    <span>Enter a Password</span> <br> <br>
+
+
+    <label for="">Enter Address : </label> <br>
+    <input class="inputBox" type="text" name="address" ngModel #address="ngModel" appAlphanumeric required
+        minlength="5"><br>
+    <span class="error" *ngIf="address.touched && address.errors?.['required']"> address is required</span> <br>
+
+
+    <button [disabled]="loginForm.invalid" (click)="submitdata(loginForm.value)">Submit</button>
+
+
+</form>

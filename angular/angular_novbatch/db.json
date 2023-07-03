@@ -1,0 +1,72 @@
+{
+  "admin": [
+    {
+      "name": "poonam",
+      "city": "mumbai",
+      "mobNo": 8656551,
+      "password": "Poonam@123",
+      "confirmPassword": "Poonam@123",
+      "id": 1
+    }
+  ],
+  "user": [
+    {
+      "name": "poonam",
+      "city": "mumbai",
+      "mobNo": 8656551,
+      "password": "Poonam@123",
+      "confirmPassword": "Poonam@123",
+      "id": 1
+    },
+    {
+      "name": "rohit",
+      "city": "mumbai",
+      "mobNo": 8656551,
+      "password": "Poonam@123",
+      "confirmPassword": "Poonam@123",
+      "id": 1
+    }
+  ],
+  "owner": [
+    {
+      "name": "poonam",
+      "city": "mumbai",
+      "mobNo": 8656551,
+      "password": "Poonam@123",
+      "confirmPassword": "Poonam@123",
+      "id": 1
+    },
+    {
+      "name": "mohit",
+      "city": "nagpur",
+      "mobNo": 12541,
+      "password": "Mohit@123",
+      "confirmPassword": "Mohit@123",
+      "id": 1
+    }
+  ],
+  "hotelDetails": [
+    {
+      "hotelName": "pride",
+      "city": "mumbai",
+      "hotelMobNo": 8656551,
+      "roomAvailable": "yes",
+      "hotelMenu": "panir tikka",
+      "checkinTime": "12 pm",
+      "checkOutTime": "11am",
+      "T&C":true,
+      "prise":2000,
+      "id": 1
+    },
+    {
+      "hotelName": "oberai",
+      "city": "nagpur",
+      "hotelMobNo": 898656551,
+      "roomAvailable": "yes",
+      "hotelMenu": "chikckn",
+      "checkinTime": "12 pm",
+      "checkOutTime": "11am",
+      "id": 2
+    }
+  ]
+}

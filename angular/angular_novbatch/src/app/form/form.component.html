@@ -1,0 +1,63 @@
+<p>form works!</p>
+
+enter your First name : <input type="text" appCharactorsonly><br>
+enter yourlast name : <input type="text" appCharactorsonly> <br>
+enter your contact no : <input type="text" appNumberonly >
+<br><br>
+
+
+<h2>pipe : </h2>
+
+<h2>{{title | uppercase}}</h2>
+<h2>{{title | lowercase}}</h2>
+<h2>{{title | titlecase}}</h2>
+<h2>{{DOBdate | date}}</h2>
+<h2>{{DOBdate2 | date : "dd/MM/yyyy"}}</h2>
+<h2>{{today}}</h2>
+<h3>{{todaydate}}</h3>
+
+
+<input type="text" [(ngModel)]=" inputBoxValue" [ngModelOptions]="{standalone:true}">
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Salary</th>
+    </tr>
+    <tr *ngFor=" let empData of employee | search : inputBoxValue">
+        <td>{{empData.name}}</td>
+        <td>{{empData.age}}</td>
+        <td>{{empData.salary}}</td>
+    </tr>
+</table>
+
+<!-- without standalon -->
+
+<input type="text" [(ngModel)] = "inputBoxValue">
+<form>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Salary</th>
+    </tr>
+    <tr *ngFor=" let empData of employee | search : inputBoxValue">
+        <td>{{empData.name}}</td>
+        <td>{{empData.age}}</td>
+        <td>{{empData.salary}}</td>
+    </tr>
+</table>
+</form>
+<br><br><br>
+
+
+<input type="text" placeholder="sarch here.." [(ngModel)]="amount">
+&#8377;{{amount | curruncyrupee }}
+
+
+
+<br><br>
+
+{{240 | currency:'INR'}} <br><br>
+
+<input type="text" appNumberony>

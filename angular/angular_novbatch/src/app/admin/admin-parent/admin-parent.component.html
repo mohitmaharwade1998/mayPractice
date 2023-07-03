@@ -1,0 +1,14 @@
+<p>admin-parent works!</p>
+
+
+enter city : 
+<input type="text" (keyup)="parentdata($event)"> <br><br>
+<br>
+
+
+<p>dataFromChild1 :  {{dataFromChild1}}</p> <br><br>
+
+
+
+<app-admin [cityName]="parentCityName" [car]="cars" (childData)="datafromChild($event)"></app-admin> <br><br>
+<app-child2 [cityNamechild2]="parentCityName"  [fruit]="fruits" [table]="parentTable"></app-child2>
